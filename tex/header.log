@@ -1,0 +1,30 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.21)  21 JUN 2020 18:32
+entering extended mode
+**./header.tex
+(header.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-06-03>
+
+! LaTeX Error: File `kaobook.cls' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: cls)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.12 
+      
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 24 strings out of 480763
+ 493 string characters out of 2912738
+ 239010 words of memory out of 3000000
+ 16143 multiletter control sequences out of 15000+200000
+ 532338 words of font info for 24 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 14i,0n,17p,215b,10s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

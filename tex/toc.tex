@@ -1,0 +1,23 @@
+
+% Note that \maketitle outputs the pages before here
+
+% If twoside=false, \uppertitleback and \lowertitleback are not printed
+% To overcome this issue, we set twoside=semi just before printing the title pages, and set it back to false just after the title pages
+\KOMAoptions{twoside=semi}
+\maketitle
+\KOMAoptions{twoside=false}
+
+
+\begingroup % Local scope for the following commands
+
+% Define the style for the TOC, LOF, and LOT
+%\setstretch{1} % Uncomment to modify line spacing in the ToC
+%\hypersetup{linkcolor=blue} % Uncomment to set the colour of links in the ToC
+\setlength{\textheight}{23cm} % Manually adjust the height of the ToC pages
+
+% Turn on compatibility mode for the etoc package
+\etocstandarddisplaystyle % "toc display" as if etoc was not loaded
+\etocstandardlines % toc lines as if etoc was not loaded
+
+\setcounter{tocdepth}{0}
+\tableofcontents % Output the table of contents
