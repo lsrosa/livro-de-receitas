@@ -16,16 +16,17 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
+\input{tex/acronyms}
 
 %----------------------------------------------------------------------------------------
 %	BOOK INFORMATION
 %----------------------------------------------------------------------------------------
 
-\titlehead{Poxa vida!}
+\titlehead{Poxa vida}
 %\subject{De uma poc nerd}
 
-\title{Livro de Receitas}
-\subtitle{Testadas e revisadas de Forma quase Cientifica}
+\title{Recipe Book}
+\subtitle{Tested and Approved}
 
 \author[Leandro de Souza Rosa]{Leandro de Souza Rosa\thanks{A big nerd}}
 
@@ -60,38 +61,7 @@
 \defbibnote{bibnote}{Here are the references in citation order.\par\bigskip} % Prepend this text to the bibliography
 \printbibliography[heading=bibintoc, title=Bibliography, prenote=bibnote] % Add the bibliography heading to the ToC, set the title of the bibliography and output the bibliography note
 
-%----------------------------------------------------------------------------------------
-%	NOMENCLATURE
-%----------------------------------------------------------------------------------------
-
-% The nomenclature needs to be compiled on the command line with 'makeindex main.nlo -s nomencl.ist -o main.nls' from the template directory
-
-\nomenclature{$c$}{Speed of light in a vacuum inertial frame}
-\nomenclature{$h$}{Planck constant}
-
-\renewcommand{\nomname}{Notation} % Rename the default 'Nomenclature'
-\renewcommand{\nompreamble}{The next list describes several symbols that will be later used within the body of the document.} % Prepend this text to the nomenclature
-
-\printnomenclature % Output the nomenclature
-
-
-%----------------------------------------------------------------------------------------
-%	GLOSSARY
-%----------------------------------------------------------------------------------------
-
-% The glossary needs to be compiled on the command line with 'makeglossaries main' from the template directory
-
-\newglossaryentry{computer}{
-	name=computer,
-	description={is a programmable machine that receives input, stores and manipulates data, and provides output in a useful format}
-}
-
-% Glossary entries (used in text with e.g. \acrfull{fpsLabel} or \acrshort{fpsLabel})
-\newacronym[longplural={Frames per Second}]{fpsLabel}{FPS}{Frame per Second}
-\newacronym[longplural={Tables of Contents}]{tocLabel}{TOC}{Table of Contents}
-
-\setglossarystyle{listgroup} % Set the style of the glossary (see https://en.wikibooks.org/wiki/LaTeX/Glossary for a reference)
-\printglossary[title=Special Terms, toctitle=List of Terms] % Output the glossary, 'title' is the chapter heading for the glossary, toctitle is the table of contents heading
+\printglossary[type=\acronymtype]
 
 %----------------------------------------------------------------------------------------
 %	INDEX
@@ -99,20 +69,7 @@
 
 % The index needs to be compiled on the command line with 'makeindex main' from the template directory
 
-\printindex % Output the index
+%\printindex % Output the index
 
-%----------------------------------------------------------------------------------------
-%	BACK COVER
-%----------------------------------------------------------------------------------------
-
-% If you have a PDF/image file that you want to use as a back cover, uncomment the following lines
-
-%\clearpage
-%\thispagestyle{empty}
-%\null%
-%\clearpage
-%\includepdf{cover-back.pdf}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}

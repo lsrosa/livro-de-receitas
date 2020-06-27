@@ -8,7 +8,7 @@
 	numbers=noenddot, % Comment to output dots after chapter numbers; the most common values for this option are: enddot, noenddot and auto (see the KOMAScript documentation for an in-depth explanation)
 	%draft=true, % If uncommented, rulers will be added in the header and footer
 	%overfullrule=true, % If uncommented, overly long lines will be marked by a black box; useful for correcting spacing problems
-]{kaobook}
+]{styles/kaobook}
 
 \input{tex/includes}
 \input{tex/defines}
@@ -18,8 +18,6 @@
 \makeindex[columns=3, title=Alphabetical Index, intoc] % Make LaTeX produce the files required to compile the index
 
 \makeglossaries % Make LaTeX produce the files required to compile the glossary
-
-\makenomenclature % Make LaTeX produce the files required to compile the nomenclature
 
 % Reset sidenote counter at chapters
 %\counterwithin*{sidenote}{chapter}
